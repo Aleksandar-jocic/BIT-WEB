@@ -1,0 +1,54 @@
+/* 
+#firstP{
+    background-color: yellow;
+    width: 400px;
+    height: 500px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+#secondP {
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    max-height: 200px;
+    overflow: auto
+} */
+
+
+p {
+    background-color: yellow;
+     border: solid 5px;
+     display: inline;
+     margin-right: 20px;
+
+}
+#st {
+    border: dotted red;
+    width: 300px;
+    /* margin: 50px; */
+}
+
+#ap {
+   border: solid green;
+width: 400px;
+visibility: hidden;
+/* margin: 0 auto; */
+}
+
+.st {
+    width: 200px;
+    /* margin-left: 100px; */
+   
+}
+div {
+    
+}
+
+h1 {
+    width: 960px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 50px 0;
+
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+
+li {
+    list-style-type: none;
+}
+
+#textarea {
+    border: 1px solid gray;
+    height: 150px;
+    width: 300px;
+    margin-top: 20px;
+    overflow: scroll;
+}
+    </style>
+</head>
+<body>
+
+    <div>
+        <input id="textmessage" type="text">
+        <input id="button" type="button" value="send">
+    </div>
+    <div>
+        <div id="textarea">
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var textlist = [];
+
+//     document.getElementById('button').addEventListener('click', function () {
+
+//         var message = document.getElementById('textmessage').value;
+            
+//         textlist.push(message);
+
+//         var result = '<ul>';
+
+//         for (var i = 0; i < textlist.length; i++) {
+
+//         result += '<li>';
+//         result += textlist[i];
+//         result += '</li>';
+//         }
+
+//         result += '</ul>';
+
+//         document.getElementById('textarea').innerHTML = result;
+
+//         document.getElementById('textmessage').value = '';        
+// })
+    document.querySelector('#textmessage').addEventListener('keyup', function (e) {
+        
+        var message = document.getElementById('textmessage').value;
+        
+        if (e.keyCode === 13) { 
+            textlist.push(message);
+        
+            var result = '<ul>';
+                for (var i = 0; i < textlist.length; i++) {
+
+                result += '<li>';
+                result += textlist[i];
+                result += '</li>';
+                }   
+            result += '</ul>';
+
+            document.getElementById('textarea').innerHTML = result;
+            document.getElementById('textmessage').value = '';        
+        
+        }
+}); 
+
+        </script>
+</body>
+</html>
+    <!-- <div class="blue">
+        <input type="button" onclick="toggle()" value="toggle"></button>
+
+        <input type="button" onclick="stopItPlease()" value="STOOOOP"></button>
+        
+    </div> -->
+
+
+<!-- 
+var but =  document.querySelector("div");
+//         var int = setInterval(toggle, 1000);
+        
+//         function toggle () {
+            
+//             but.classList.toggle('red');
+            
+            
+//         } 
+                
+//         function stopItPlease() {
+//     clearInterval(int);
+// } -->

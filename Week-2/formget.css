@@ -1,0 +1,54 @@
+
+body {
+    font-family: sans-serif;
+}
+
+
+#all {
+    width:25%;
+    height: 390px;
+    padding: 20px;
+    margin: 10% auto auto auto;
+    background-color: rgb(238, 238, 238);
+    text-align: left;
+    border-radius: 10px 0px 10px 0px;
+    border: 3px;
+}
+
+span {
+    color: rgb(255, 190, 0);
+    margin-left: -8px;
+}
+label {
+    text-align: left;
+  
+}
+input {
+    border-radius: 5px;
+    width: 100%;
+}
+.Butt {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.vid {
+    display: inline-block;
+}
+h1 {
+    text-align: center;
+}
+#h1 {
+    margin-bottom: 0px;
+}
+hr {
+    color: black;
+}
+.ttub {
+    background-color: rgb(193, 57, 43);
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    padding: 5px;
+}
